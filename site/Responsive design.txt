@@ -1,0 +1,5 @@
+Check the difference between the two code with and without metatag viewpoint on mobile iphone- the layouts are different:
+
+without the metatag: displays 2 items per row
+
+with metatag: displays 1 item per row(which is correct)

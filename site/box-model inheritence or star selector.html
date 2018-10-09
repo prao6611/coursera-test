@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+*{
+	/* star selector feature for box- sizing */
+	box-sizing: border-box;
+
+	/* margin and padding does not apply to BOX MODEL as whatever goes in body is below it..so by placing the code below in * selector, BOX MODEL will have not padding*/
+	margin: 0;
+	padding: 0;
+}
+body {
+	/* margin: 0;/* removes the 8px margin.see effect when commented*/
+	/* padding: 0;/* removes the 8px margin.see effect when commented*/
+  background-color: gray;
+}
+#box {
+  background-color: red;
+  padding: 30px 30px 30px 30px;
+  border: 3px solid black;
+
+  /* if you want to give margin all arpund the outter box then.to see the effect comment the line below and view it
+  */
+  /* margin: 50px;
+
+  /* setting width and height */
+   width: 400px;
+  /* height: 50px;*/
+
+  /*new css3 feature that holds the size of the box...*/
+  /* box-sizing: border-box; */
+
+  /* goes back to original size or width */
+  /*box-sizing: content-box; */
+
+/* margin at the other end of box will be 50px as > than 30px */
+  margin-top: 50px;
+
+
+}
+#content {
+  background-color: #90EE90; /*green*/
+}
+h1 {
+  margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+</div>
+
+
+</body>
+</html>
